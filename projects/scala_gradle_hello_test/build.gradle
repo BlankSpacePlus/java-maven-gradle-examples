@@ -1,0 +1,23 @@
+group 'org.example'
+version 'V1.0'
+
+apply plugin: 'java' // 指定java插件
+apply plugin: 'scala' // 指定scala插件
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'https://maven.ibiblio.org/maven2/'
+    }
+}
+
+dependencies {
+    // 添加scala基本库
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.8'
+    // 添加scala测试相关的依赖
+    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: '3.0.5'
+}
