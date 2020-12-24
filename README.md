@@ -8,10 +8,4 @@
 | Maven | 3.5.3 |
 | Gradle | 5.6.2 |
 
-![](images/maven-java.jpg)
-
 ![](images/maven-vs-gradle.jpg)
-
-![](images/maven-to-gradle.png)
-
-![](images/gradle.png)
