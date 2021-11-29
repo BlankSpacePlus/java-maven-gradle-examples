@@ -1,0 +1,13 @@
+.idea
+.classpath
+.project
+.settings
+.checkstyle
+.DS_Store
+*.iml
+target
+**/.flattened-pom.xml
+*.jpg
+*.png
+*.gif
+*.jpeg
