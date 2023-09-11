@@ -185,7 +185,7 @@
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
-            <version>3.8.0</version>
+            <version>3.9.0</version>
         </dependency>
         <!-- 提供对数字类型（复数，四元数，分数）和实用程序（数组，组合数学）的支持 -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-numbers-core -->
