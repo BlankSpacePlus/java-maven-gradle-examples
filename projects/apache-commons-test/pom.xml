@@ -123,7 +123,7 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.4</version>
+            <version>1.5</version>
         </dependency>
         <!-- 读取和写入各种图像格式的库 -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-imaging -->
