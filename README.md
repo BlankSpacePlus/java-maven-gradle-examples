@@ -1,11 +1,10 @@
-# 基于Maven或Gradle构建的Java练习工程
+# Java third-party library examples built based on Maven or Gradle
 
-这里基于工程来组织项目代码，包含一些基本的JDK调用API训练和外部JAR包导入训练。
+This Repository shares some examples of learning to use Java third-party libraries.
+These sample projects are built based on Maven or Gradle.
 
-| 软件名 | 版本号 |
-|:---:|:---:|
-| JDK | 1.8.0_131 |
-| Maven | 3.5.3 |
-| Gradle | 5.6.2 |
-
-![](images/maven-vs-gradle.jpg)
+|  Tool  |    Version    |
+|:------:|:-------------:|
+|  JDK   | 1.8 / 11 / 17 |
+| Maven  |     3.5.3     |
+| Gradle |     5.6.2     |
