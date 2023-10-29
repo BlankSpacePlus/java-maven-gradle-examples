@@ -16,16 +16,21 @@ import sootup.java.core.JavaSootClassSource;
 import sootup.java.core.language.JavaLanguage;
 import sootup.java.core.views.JavaView;
 
-public class Main {
+public class JavaClassPathAnalysisDemo {
     public static void main(String[] args) {
+        // Creating a Project
         AnalysisInputLocation<JavaSootClass> inputLocation = new JavaClassPathAnalysisInputLocation("<BinaryFilePath>");
         JavaLanguage language = new JavaLanguage(8);
         Project<JavaSootClass, JavaView> project = JavaProject.builder(language).addInputLocation(inputLocation).build();
+        // Retrieving a Class
         ClassType classType = project.getIdentifierFactory().getClassType("com.blankspace.HelloWorld");
+        // Retrieving a Method
         MethodSignature methodSignature = project.getIdentifierFactory().getMethodSignature(classType, "main", "void", Collections.singletonList("java.lang.String[]"));
+        // Creating a View
         View<JavaSootClass> view = project.createFullView();
         SootClass<JavaSootClassSource> sootClass = view.getClass(classType).get();
         SootMethod sootMethod = sootClass.getMethod(methodSignature.getSubSignature()).get();
+        // Retrieving the Control-Flow Graph of a Method
         System.out.println(sootMethod.getBody().getStmts());
     }
 }
